@@ -5,12 +5,13 @@ Simple Ruby-based web app game developed to learn MVC, web testing frameworks.
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-Fork and download repo to local machine
-Install included Gemfiles into local cloned folder, using Bundle
-Using Terminal, navigate to the cloned folder
-Enter "shotgun config.ru" to start up server
-Check terminal output for port being used e.g. "Listening on 127.0.0.1:9393, CTRL+C to stop" <-- note 9393
-Using your favourite browser, enter localhost:**** as per previous step. This should load the homepage.
+
+1. Fork and download repo to local machine
+2. Install included Gemfiles into local cloned folder, using Bundle
+3. Using Terminal, navigate to the cloned folder
+4. Enter "shotgun config.ru" to start up server
+5. Check terminal output for port being used e.g. "Listening on 127.0.0.1:9393, CTRL+C to stop" <-- note __9393__
+6. Using your favourite browser, enter localhost:9393, replacing 9393 with your terminal output. This should load the homepage.
 
 ### Prerequisites
 
