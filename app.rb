@@ -4,7 +4,8 @@ require './lib/player'
 
 class Battle < Sinatra::Base
   enable :sessions
-  configure(:development) { set :session_secret, "something" }
+  set :session_secret, 'super secret'
+  # configure(:development) { set :session_secret, "something" }
 
   get '/' do
     erb :index
@@ -17,16 +18,17 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
-    @player_1_name = $player_1.name
-    @player_2_name = $player_2.name
+    @player_1 = $player_1
+    @player_2 = $player_2
     erb :play
   end
 
   # using GET because not changing the state of the program.
   get '/attack' do
-    @player_1_name = $player_1.name 
-    @player_2_name = $player_2.name
-    @player_2_hp = $player_2.attacked
+    @player_1 = $player_1
+    @player_2 = $player_2
+    @player_1.attack(@player_2)
+
     erb :attack
   end
 

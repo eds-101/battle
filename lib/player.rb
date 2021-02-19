@@ -6,6 +6,10 @@ attr_accessor :name, :hp
     @hp = 100
   end
 
+  def attack(player)
+    player.attacked
+  end
+
   def attacked
     @hp -= 10
   end
