@@ -1,5 +1,5 @@
 class Game
   def attack(player)
-    player.attacked
+    player.receive_damage
   end
 end
