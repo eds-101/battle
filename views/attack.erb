@@ -1,2 +1,4 @@
-<%= @game.current_turn.name %> attacked <%= @game.player_2.name %>!
-<a href="/play">Ok</a>
+<%= @game.current_turn.name %> made an attack! 
+<form action="/switch_turns" method="post">
+  <input type="submit" value="Ok">
+</form>
