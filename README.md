@@ -1,47 +1,34 @@
-# Battle
+Battle Game - Two players
+=================
 
-Simple Ruby-based web app game developed to learn MVC, web testing frameworks.
+Two player web app game, developed to learn more about MVC and web testing frameworks 
 
-## Getting Started
+Authors
+* **Ed George** 
+* **Adam Jonas**
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Technologies used
+- Language: Ruby
+- Server & Middleware: Sinatra, Rack
+- Testing Frameworks: Rspec, Capybara
 
-1. Fork and download repo to local machine
-2. Install included Gemfiles into local cloned folder, using Bundle
-3. Using Terminal, navigate to the cloned folder
-4. Enter "shotgun config.ru" to start up server
-5. Check terminal output for port being used e.g. "Listening on 127.0.0.1:9393, CTRL+C to stop" <-- note __9393__
-6. Using your favourite browser, enter localhost:9393, replacing 9393 with your terminal output. This should load the homepage.
+<img src="/images/app_gif.gif" height="400px"> Replace this
+<!-- ![Video demo of the news app](https://github.com/eds-101/news-summary-challenge/blob/) -->
 
-### Prerequisites
-
-
+### Getting started
 ```
-Bundle 2 to install dependencies
-Terminal
+git clone git@github.com:eds-101/battle.git
+cd battle
+bundle
+```
+### Usage
+```
+shotgun config.ru   #start server
+Check terminal output for port being used e.g. "Listening on 127.0.0.1:9393..." <-- copy __9393__
+Use browser to visit localhost:**** (e.g. localhost:9393) replacing **** with output from previous step
+```
+### Unit & Feature tests
+```
+rspec
 ```
 
-### Tests
-
-Feature tests - Using Capybara/Rspec
-Spec test - Rspec
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Sinatra]
-* [Rack Up]
-
-## Authors
-
-* **Ed George** - *Initial work* - 
-
-See also the list of [contributors](https://github.com/eds-101/battle/contributors) who participated in this project.
-
-## Acknowledgments
-
-* Makers Academy exercise
